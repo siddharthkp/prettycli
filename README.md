@@ -19,7 +19,7 @@ const {info, warn} = require('prettycli');
   Print to stdout:
   1. info: (label, message)
   2. loading: (label, message)
-  3. warning: (message)
+  3. warn: (message)
   4. error: (message)
 
   Returns pretty string (does not print)

@@ -2,7 +2,7 @@ const chalk = require('chalk');
 
 const colorMap = {
   info: 'green',
-  warning: 'yellow',
+  warn: 'yellow',
   loading: 'blue',
   error: 'red'
 };
@@ -13,7 +13,7 @@ const print = (type, label, message) => {
 };
 
 const info = (label, message) => print('info', label, message);
-const warning = (message) => print('warning', 'WARN', message);
+const warn = (message) => print('warn', 'WARN', message);
 const loading = (label, message) => print('loading', label, message);
 
 const command = (command) => chalk.blue(command);
@@ -30,4 +30,4 @@ const error = (err) => {
   throw(new Error(err));
 };
 
-module.exports = {info, loading, warning, error, command, link};
+module.exports = {info, loading, warn, error, command, link};
