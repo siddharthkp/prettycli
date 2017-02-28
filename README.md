@@ -1,8 +1,9 @@
-### prettycli
-
-Pretty print messages on the terminal
-
-&nbsp;
+<p align="center">
+  <img src="https://raw.githubusercontent.com/siddharthkp/prettycli/master/screenshot.png"/>
+  <br><br>
+  <b>Pretty print messages on the terminal</b>
+  <br><br>
+</p>
 
 ####  Usage
 
