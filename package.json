@@ -1,0 +1,15 @@
+{
+  "name": "prettycli",
+  "version": "1.0.0",
+  "description": "Pretty print messages on the terminal",
+  "main": "index.js",
+  "author": "siddharthkp",
+  "bugs": {
+    "url": "https://github.com/practo/prettycli/issues"
+  },
+  "repository": "siddharthkp/prettycli",
+  "homepage": "https://github.com/siddharthkp/prettycli",
+  "dependencies": {
+    "chalk": "1.1.3"
+  }
+}
