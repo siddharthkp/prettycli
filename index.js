@@ -19,15 +19,17 @@ const loading = (label, message) => print('loading', label, message);
 const command = (command) => chalk.blue(command);
 const link = (url) => chalk.blue(url);
 
-const error = (err) => {
+const error = (err, silent) => {
   console.log();
   print('error', 'ERROR', err);
-  console.log(chalk.red`
+  if (!silent) {
+    console.log(chalk.red`
 
-    If you think this is a bug, you should raise a bug.
+      If you think this is a bug, you should raise a bug.
 
-  `);
-  throw(new Error(err));
+      `);
+      throw(new Error(err));
+  }
 };
 
 module.exports = {info, loading, warn, error, command, link};
