@@ -19,10 +19,9 @@ const loading = (label, message) => print('loading', label, message);
 const command = (command) => chalk.blue(command);
 const link = (url) => chalk.blue(url);
 
-const error = (err, silent) => {
-  console.log();
+const error = (err, options = {exit: true}) => {
   print('error', 'ERROR', err);
-  if (!silent) throw(new Error(err));
+  if (options.exit) throw(new Error(err));
 };
 
 module.exports = {info, loading, warn, error, command, link};
