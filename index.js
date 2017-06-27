@@ -23,8 +23,8 @@ const loading = (label, message) => print('loading', label, message)
 const command = command => chalk.blue(command)
 const link = url => chalk.blue(url)
 
-const error = (err, options = { exit: true, silent: false }) => {
-  print('error', 'ERROR', err)
+const error = (err, options = { exit: true, silent: false, label }) => {
+  print('error', options.label || 'ERROR', err)
   if (options.silent) process.exit(1)
   if (options.exit) throw new Error(err)
 }
