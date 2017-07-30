@@ -1,6 +1,6 @@
 {
   "name": "prettycli",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Pretty print messages on the terminal",
   "main": "index.js",
   "author": "siddharthkp",
