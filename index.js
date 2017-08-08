@@ -24,8 +24,9 @@ const command = command => chalk.blue(command)
 const link = url => chalk.blue(url)
 
 const error = (err, options) => {
+  const label = 'ERROR'
   if (!options) options = { exit: true, silent: false, label }
-  print('error', options.label || 'ERROR', err)
+  print('error', options.label || label, err)
   if (options.silent) process.exit(1)
   if (options.exit) throw new Error(err)
 }
