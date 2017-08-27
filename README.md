@@ -35,3 +35,7 @@ else warn('This is production mode! Are you sure?');
 ```
 
 &nbsp;
+
+#### license
+
+MIT © [siddharthkp](https://github.com/siddharthkp)
