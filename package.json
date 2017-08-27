@@ -10,6 +10,6 @@
   "repository": "siddharthkp/prettycli",
   "homepage": "https://github.com/siddharthkp/prettycli",
   "dependencies": {
-    "chalk": "1.1.3"
+    "chalk": "2.1.0"
   }
 }
