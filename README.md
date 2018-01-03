@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/siddharthkp/prettycli/master/screenshot.png"/>
+  <img src="https://cdn.rawgit.com/siddharthkp/prettycli/64428632b46e83ef3717ec1b67113952b9b86e6b/screenshot.svg"/>
   <br><br>
   <b>Pretty print messages on the terminal</b>
   <br><br>
