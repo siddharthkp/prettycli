@@ -1,4 +1,5 @@
 const chalk = require('chalk')
+const width = require('string-width')
 
 const colorMap = {
   info: 'green',
@@ -9,9 +10,18 @@ const colorMap = {
 
 const print = (type, label, message) => {
   const color = colorMap[type]
+
+  const fmtDate = chalk.grey(new Date().toLocaleTimeString())
+  const fmtLabel = chalk.inverse.bold[color](` ${label} `)
+  const fmtMessage = chalk[color](message)
+
+  const widthChars = width(fmtLabel) + width(fmtMessage) + width(fmtDate)
+
+  let logSpace = process.stdout.columns - widthChars - 2
+  if (logSpace <= 0) logSpace = 10
+
   console.log(
-    chalk.inverse.bold[color](` ${label} `),
-    chalk[color](message),
+    `${fmtLabel} ${fmtMessage}${' '.repeat(logSpace)}${fmtDate}`,
     '\n'
   )
 }
