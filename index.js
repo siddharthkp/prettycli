@@ -7,7 +7,7 @@ const colorMap = {
   error: 'red'
 }
 
-const print = (type, label, message) => {
+const print = (message, label, type) => {
   const color = colorMap[type]
   console.log(
     chalk.inverse.bold[color](` ${label} `),
