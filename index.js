@@ -16,9 +16,9 @@ const print = (message, label, type) => {
   )
 }
 
-const info = (label, message) => print('info', label, message)
-const warn = message => print('warn', 'WARN', message)
-const loading = (label, message) => print('loading', label, message)
+const info = (message, label = 'INFO') => print(message, label, 'info')
+const warn = (message, label = 'WARN') => print(message, label, 'warn')
+const loading = (message, label = 'LOADING') => print(message, label, 'loading')
 
 const command = command => chalk.blue(command)
 const link = url => chalk.blue(url)
