@@ -20,8 +20,8 @@ const info = (message, label = 'INFO') => print(message, label, 'info')
 const warn = (message, label = 'WARN') => print(message, label, 'warn')
 const loading = (message, label = 'LOADING') => print(message, label, 'loading')
 
-const command = command => chalk.blue(command)
-const link = url => chalk.blue(url)
+const command = message => chalk.blue(message)
+const link = command
 
 const error = (err, options) => {
   const label = 'ERROR'
